@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<title>Programa de mundiales de la fifa</title>
+<h1>Mundiales de la FIFA</h1>
+<script>
+    function saltarlineas(){
+        document.write("<br><br><br>")
+    }
+
+    function mensaje(x){
+        document.write(x)
+        saltarlineas();
+    }
+
+    var anhoMundial = 1930;
+    var limite = parseInt(prompt("Ingrese el año maximo"))
+
+    alert("Hubo mundial de la FIFA en el año "+anhoMundial);
+
+    while(anhoMundial <= limite){
+        alert("Hubo mundial de la FIFA en el año "+anhoMundial);
+        anhoMundial = anhoMundial+4;
+    }
+    
+    alert("Fin");
+</script>

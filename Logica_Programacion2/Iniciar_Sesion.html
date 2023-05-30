@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<script>
+
+    var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
+
+    var intentos = 3;
+    var contador = 1;
+
+    while(contador<=intentos){
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+        if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+            alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+            break;
+        }
+        else{
+            contador+=1;
+        }
+    }
+
+    if(inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada){
+        document.write("Sesion iniciada de manera correcta");
+    }
+    else{
+        document.write("Inicio de sesión inválido. Favor intente de nuevo");
+    }
+</script>

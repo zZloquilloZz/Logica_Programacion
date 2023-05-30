@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<title>Tabla de multiplicar</title>
+<h1>Tabla de multiplicar</h1>
+<script>
+    function saltarlineas(){
+        document.write("<br><br><br>")
+    }
+
+    function mensaje(x){
+        document.write(x)
+        saltarlineas();
+    }
+
+    var multiplicador = 1;
+
+    //Bucle con while
+    while(multiplicador <=10){
+        mensaje(5*multiplicador);
+        multiplicador = multiplicador+1
+    }
+    
+    //Bucle con for
+    for(var multiplicador = 1;multiplicador<=10;multiplicador+=1){
+        mensaje(5*multiplicador)
+    }
+</script>
